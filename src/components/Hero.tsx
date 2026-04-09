@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Download, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Mail, Download, ChevronDown, Globe } from "lucide-react";
 import Image from "next/image";
 import { personalInfo } from "@/data/resume";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
@@ -110,6 +110,15 @@ export default function Hero() {
           {[
             { icon: Github, href: personalInfo.socials.github, label: "GitHub" },
             { icon: Linkedin, href: personalInfo.socials.linkedin, label: "LinkedIn" },
+            ...(personalInfo.socials.portfolio
+              ? [
+                  {
+                    icon: Globe,
+                    href: personalInfo.socials.portfolio,
+                    label: "Portfolio",
+                  },
+                ]
+              : []),
             { icon: Mail, href: `mailto:${personalInfo.email}`, label: "Email" },
           ].map(({ icon: Icon, href, label }) => (
             <a

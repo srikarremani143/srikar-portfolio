@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Send, Globe } from "lucide-react";
 import { personalInfo } from "@/data/resume";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
 import SectionHeading from "./SectionHeading";
@@ -30,6 +30,9 @@ const contactMethods = [
 const socialLinks = [
   { icon: Github, label: "GitHub", href: personalInfo.socials.github },
   { icon: Linkedin, label: "LinkedIn", href: personalInfo.socials.linkedin },
+  ...(personalInfo.socials.portfolio
+    ? [{ icon: Globe, label: "Portfolio", href: personalInfo.socials.portfolio }]
+    : []),
 ];
 
 export default function Contact() {

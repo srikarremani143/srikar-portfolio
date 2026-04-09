@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin, Mail, ArrowUp } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowUp, Globe } from "lucide-react";
 import { personalInfo } from "@/data/resume";
 
 export default function Footer() {
@@ -34,6 +34,17 @@ export default function Footer() {
             >
               <Linkedin size={18} />
             </a>
+            {personalInfo.socials.portfolio ? (
+              <a
+                href={personalInfo.socials.portfolio}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-lg glass-card hover:scale-110 transition-transform text-[var(--muted)] hover:text-blue-500"
+                aria-label="Portfolio"
+              >
+                <Globe size={18} />
+              </a>
+            ) : null}
             <a
               href={`mailto:${personalInfo.email}`}
               className="p-2.5 rounded-lg glass-card hover:scale-110 transition-transform text-[var(--muted)] hover:text-blue-500"

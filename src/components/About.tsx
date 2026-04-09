@@ -8,7 +8,7 @@ import SectionHeading from "./SectionHeading";
 
 const stats = [
   { icon: Briefcase, value: "5+", label: "Years Experience" },
-  { icon: BookOpen, value: "6+", label: "Major Projects" },
+  { icon: BookOpen, value: "2", label: "Featured Projects" },
   { icon: FileText, value: "2", label: "Publications" },
   { icon: Award, value: "M.S.", label: "Robotics & AI" },
 ];

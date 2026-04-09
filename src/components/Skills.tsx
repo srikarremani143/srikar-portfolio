@@ -8,6 +8,8 @@ import {
   BarChart3,
   Layers,
   Cloud,
+  Sparkles,
+  Server,
 } from "lucide-react";
 import { skills } from "@/data/resume";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
@@ -19,6 +21,8 @@ const iconMap: Record<string, React.ElementType> = {
   "bar-chart": BarChart3,
   layers: Layers,
   cloud: Cloud,
+  sparkles: Sparkles,
+  server: Server,
 };
 
 export default function Skills() {

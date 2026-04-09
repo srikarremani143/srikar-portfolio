@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Srikar Anudeep Remani",
-  title: "Generative AI Engineer & AI Coding Analyst",
+  title: "Applied Gen AI Engineer & Code Judge (GitHub Copilot)",
   email: "srikar1506@gmail.com",
   phone: "512-202-9957",
   location: "Austin, TX",
@@ -8,16 +8,17 @@ export const personalInfo = {
   resume: "/Srikar.pdf",
   socials: {
     github: "https://github.com/srikar1506",
-    linkedin: "https://linkedin.com/in/srikaranudeepremani",
+    linkedin: "https://www.linkedin.com/in/asr143/",
+    portfolio: "https://srikarremani143.github.io/srikar-portfolio/",
     streamlit: "https://share.streamlit.io/",
   },
   tagline:
-    "Building enterprise-grade AI systems with LLMs, RAG, and multi-agent orchestration that drive real-world impact.",
+    "Production LLM systems—multi-agent orchestration, RAG on BigQuery, NL2SQL, and multimodal interfaces—with quality loops from evaluation to fine-tuning exports.",
   certifications: ["Certified Google Gen AI Leader"],
 };
 
 export const summary =
-  "Generative AI Engineer and AI Coding Analyst with experience building enterprise-grade, production-scale AI systems. Specialized in Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), multi-agent orchestration, and multimodal AI integrated with real-time ERP and cloud ecosystems. Proven track record of designing scalable microservices architectures, automated data pipelines, evaluation frameworks, and governance dashboards that improve model accuracy, reduce hallucinations, and drive measurable revenue and operational impact.";
+  "Applied Generative AI engineer specializing in production LLM systems: multi-agent orchestration, RAG on BigQuery, text-to-SQL, and multimodal interfaces, built with FastAPI, GCP, and Vertex AI / Gemini, with explicit quality loops (feedback, reporting, corrections, and fine-tuning exports). Strengthens model reliability through Copilot-oriented code evaluation and RLHF-adjacent workflows at Microsoft. Background includes ML research (computer vision and process analytics), data science (ETL, NLP, dashboards), and an Azure analytics/MLOps platform project.";
 
 export interface Skill {
   name: string;
@@ -37,6 +38,21 @@ export const skills: SkillCategory[] = [
     skills: [{ name: "Python" }, { name: "SQL" }],
   },
   {
+    category: "Generative AI & LLM Systems",
+    icon: "sparkles",
+    skills: [
+      { name: "RAG" },
+      { name: "Vector search & embeddings" },
+      { name: "Multi-agent orchestration" },
+      { name: "Natural language to SQL" },
+      { name: "Multimodal workflows (text, speech, vision)" },
+      { name: "Prompt design & evaluation" },
+      { name: "Guardrails & relevance filtering" },
+      { name: "Human-in-the-loop feedback loops" },
+      { name: "Fine-tuning data export (JSONL)" },
+    ],
+  },
+  {
     category: "Machine Learning & AI",
     icon: "brain",
     skills: [
@@ -44,10 +60,21 @@ export const skills: SkillCategory[] = [
       { name: "Unsupervised Learning" },
       { name: "Ensemble Methods" },
       { name: "Feature Engineering" },
-      { name: "RAG" },
-      { name: "Prompt Engineering" },
-      { name: "Model Evaluation" },
+      { name: "Model Evaluation (ROC-AUC, F1)" },
       { name: "Cross-Validation" },
+    ],
+  },
+  {
+    category: "Backend & APIs",
+    icon: "server",
+    skills: [
+      { name: "FastAPI" },
+      { name: "REST API design" },
+      { name: "WebSockets (streaming)" },
+      { name: "Pydantic" },
+      { name: "Async Python" },
+      { name: "Microservices layout" },
+      { name: "GCP service accounts" },
     ],
   },
   {
@@ -58,10 +85,10 @@ export const skills: SkillCategory[] = [
       { name: "Tableau" },
       { name: "GCP Looker Studio" },
       { name: "Amazon QuickSight" },
-      { name: "Advanced Excel" },
-      { name: "Statistical Modeling" },
-      { name: "Data Mining" },
-      { name: "Anomaly Detection" },
+      { name: "Excel dashboards" },
+      { name: "Statistical modeling" },
+      { name: "Data mining" },
+      { name: "Anomaly detection" },
     ],
   },
   {
@@ -79,8 +106,9 @@ export const skills: SkillCategory[] = [
       { name: "NumPy" },
       { name: "Pandas" },
       { name: "Scikit-learn" },
+      { name: "SciPy" },
+      { name: "Statsmodels" },
       { name: "Pydantic" },
-      { name: "FastAPI" },
     ],
   },
   {
@@ -94,7 +122,7 @@ export const skills: SkillCategory[] = [
       { name: "GCP BigQuery" },
       { name: "GCP Cloud Storage" },
       { name: "GCP Cloud Run" },
-      { name: "GCP Vertex AI" },
+      { name: "GCP Vertex AI / Gemini" },
       { name: "AWS QuickSight" },
       { name: "Docker" },
     ],
@@ -112,33 +140,36 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    role: "AI Coding Analyst",
+    role: "Code Judge",
     company: "Microsoft",
-    location: "Redmond, WA",
+    location: "Remote - Redmond, WA",
     period: "November 2025 – Present",
     current: true,
     bullets: [
-      "Developing and optimizing Python-based data analysis pipelines to enhance Microsoft Copilot's accuracy and efficiency in automating developer and productivity workflows.",
-      "Collaborating cross-functionally with engineering and data science teams to diagnose and resolve multi-step reasoning and iteration issues, significantly reducing LLM hallucinations and response inaccuracies.",
-      "Providing structured evaluation feedback and technical insights to AI development teams, driving measurable improvements in system reliability, response quality, and processing efficiency.",
-      "Partnered with research teams to evaluate and benchmark prompt engineering strategies for LLM-based code generation, improving output consistency and contextual understanding.",
-      "Prototyped automated Python-based evaluation frameworks to aggregate, analyze, and visualize model performance metrics, enabling early detection of regressions and edge-case failures.",
+      "Evaluated AI-generated Python solutions for GitHub Copilot, applying rigorous software engineering principles to assess correctness, efficiency, and adherence to best practices in support of reinforcement learning from human feedback (RLHF).",
+      "Prototyped automation tools in Python to aggregate, analyze, and visualize evaluation metrics across prompt versions, enabling rapid detection of performance regressions and systematic improvement of code generation quality.",
+      "Authored internal documentation and contributed to the creation of a centralized prompt library and evaluation framework, expanding coverage of prompt diversity and failure-case handling.",
+      "Developed and optimized Python-based data analysis pipelines, significantly improving Microsoft Copilot's accuracy and reducing hallucinations in multi-step reasoning and task automation scenarios.",
     ],
   },
   {
-    role: "Gen AI Developer",
-    company: "Jade Business Services",
+    role: "Applied Gen AI Engineer",
+    company: "Jade Business Services LLC",
     location: "Remote - Frisco, TX",
     period: "April 2025 – Present",
     current: true,
     bullets: [
-      "Architected Phase 2 transformation of an enterprise Gen AI platform into a scalable, revenue-driving AI ecosystem integrating customer-facing and internal AI agents across web, mobile, and ERP systems.",
-      "Designed and deployed a Unified Admin Dashboard with real-time data source analytics, file-delta integrity monitoring, pipeline health tracking, governance KPIs, and audit trails.",
-      "Built a No-Code Dynamic Use-Case Builder triggering automated RAG pipelines for scalable self-service AI agent creation.",
-      "Delivered a Conversational E-Commerce Sales Agent for natural language product discovery, compatibility checks, upsell recommendations, and dynamic cart redirection.",
-      "Built an AI-Assisted CPQ Agent integrating real-time ERP, pricing, and inventory APIs to generate validated, error-free system configurations.",
-      "Developed a Multimodal Field Support Agent leveraging Computer Vision, speech recognition, and enhanced RAG for equipment identification and troubleshooting.",
-      "Architected a Master Orchestration Agent and containerized microservices framework (FastAPI, Docker, Cloud Run, Vertex AI, BigQuery) enabling multi-agent routing and continuous learning loops.",
+      "Architected and led Phase 2 transformation of an enterprise Gen AI platform into a scalable, revenue-driving AI ecosystem integrating customer-facing and internal AI agents across web, mobile, and ERP systems.",
+      "Built a Master orchestration service (FastAPI) that routes natural language to specialized agents (E-Commerce, Web UI, Staff, Customer), with per-session conversation state, hybrid SQL+RAG answer merging, domain-aware vision pre-processing for images, and guardrails for out-of-scope and low-confidence or empty-SQL outcomes.",
+      "Implemented retrieval-augmented generation (RAG) on Google BigQuery using embedding-based vector search, cosine-distance thresholds, optional re-ranking, conversation-aware context, entity-focused chunk filtering, and LLM answers grounded strictly on retrieved chunks to reduce hallucinations.",
+      "Built an Agent Builder exposing automated pipelines (GCS ingestion, multi-format parsing—PDF, tabular, images, text—chunking, synthetic augmentation where configured, batch embedding, BigQuery indexing) with job progress via WebSockets and a storage/BigQuery Watchdog that polls cloud state and broadcasts operational events for near-real-time pipeline visibility.",
+      "Delivered governed RAG: link/unlink agent builder knowledge agents to orchestrator agents, plus hybrid merge of document answers with SQL/structured agents and image citation support.",
+      "Delivered a Conversational E-Commerce Sales Agent integrated into uri.com supporting natural language product discovery, compatibility and substitution logic, upsell recommendations, and dynamic cart redirection.",
+      "Built an AI-Assisted CPQ (Configure-Price-Quote) Agent integrating real-time ERP, pricing, and inventory APIs to generate validated configurations and quote packages.",
+      "Developed a Multimodal Field Support Agent (text, voice, image) using speech-to-text, Gemini vision for structured extraction from labels and documents, and RAG-backed answers with reference images and signed URL patterns for secure asset delivery.",
+      "Architected containerized microservices (FastAPI; Docker/Cloud Run where deployed) with Vertex AI/Gemini and BigQuery, enabling multi-agent routing, real-time API integrations (ERP and related systems), recommendation surfaces, and continuous improvement workflows.",
+      "Implemented an end-to-end user feedback and quality analytics stack: thumbs up/down with optional comments persisted to BigQuery, automatic dataset/table provisioning, per-answer query log for coverage versus silent non-feedback, time-windowed feedback reports (totals, satisfaction rate, top topics, downvote samples), and admin CSV/API export for audit and stakeholder review.",
+      "Built a Corrections Knowledge Base on top of negative feedback: queue of pending issues from downvotes, CRUD and approval workflow for gold answers, embedding-based retrieval to surface corrections on similar future queries, test endpoints for match quality, and JSONL export plus stats for Gemini/Vertex fine-tuning and supervised improvement loops.",
     ],
   },
   {
@@ -148,20 +179,19 @@ export const experiences: Experience[] = [
     period: "October 2023 – June 2025",
     current: false,
     bullets: [
-      "Engineered end-to-end video analytics pipeline for liquid crystal alignment experiments using OpenCV, TensorFlow (MobileNetV2 CNN), PCA, and Hotelling T² control charts for multivariate change-point detection.",
-      "Built ML models (Random Forest) to predict optimal voltage-time parameters and deployed Streamlit inference app for automated feature extraction and reporting.",
-      "Performed thermal data analytics for FDM 3D printing using Python, generating heatmaps, statistical analysis, dimensionality reduction, and feature engineering for process optimization.",
+      "Engineered end-to-end video analytics pipeline for liquid crystal alignment experiments using OpenCV, TensorFlow (MobileNetV2 CNN), PCA, and Hotelling T² control charts for multivariate change-point detection; built ML models (Random Forest) to predict optimal voltage–time parameters and deployed Streamlit inference app for automated feature extraction and reporting.",
+      "Performed thermal data analytics for FDM 3D printing using Python (NumPy, Pandas, Matplotlib), generating heatmaps, statistical analysis (mean, median, std, box plots), dimensionality reduction, and feature engineering to study temperature evolution; integrated data transformation, anomaly detection, and visualization for process optimization and experimental validation.",
     ],
   },
   {
     role: "Junior Data Scientist",
     company: "Findability AI Sciences",
     location: "Boston, MA",
-    period: "September 2023 – October 2023",
+    period: "September 2022 – October 2023",
     current: false,
     bullets: [
-      "Developed ETL pipeline for web scraping, data cleaning, and summarization, processing 500+ articles weekly with 95% summarization accuracy.",
-      "Applied data mining and statistical techniques to digital media data, creating dashboards in Amazon QuickSight with KPIs such as 30% MoM query volume growth and 15% cost savings.",
+      "Developed ETL pipeline for web scraping, data cleaning, and summarization, retrieving top news URLs and generating interactive reports using SQL, Python, and BERT-integrated tools, processing 500+ articles weekly with 95% summarization accuracy.",
+      "Applied data mining and statistical techniques to digital media data, creating dashboards in Amazon QuickSight for operational insights and performance tracking, with KPIs such as query volume growth (30% MoM) and cost savings (15%).",
     ],
   },
   {
@@ -171,9 +201,9 @@ export const experiences: Experience[] = [
     period: "May 2020 – May 2022",
     current: false,
     bullets: [
-      "Developed an end-to-end ASR pipeline converting student slokha audio to text using Wav2Vec2 and Transformer-based architectures for low-resource language modeling.",
-      "Leveraged BERT embeddings for semantic post-processing including contextual correction, summarization, and translation.",
-      "Designed and deployed a production-ready speech-to-text → translation workflow with REST API integration and automated batch processing.",
+      "Developed an end-to-end Automatic Speech Recognition (ASR) pipeline converting student slokha audio to text using Wav2Vec2 (self-supervised pretraining + fine-tuning) and Transformer-based architectures for low-resource language modeling.",
+      "Leveraged BERT embeddings for semantic post-processing including contextual correction, summarization, and translation to improve transcription accuracy and linguistic coherence.",
+      "Designed and deployed a production-ready speech-to-text → translation workflow with REST API integration, automated batch processing, and real-time monitoring to support scalable processing of large audio datasets.",
     ],
   },
 ];
@@ -189,67 +219,36 @@ export const projects: Project[] = [
   {
     title: "Enterprise AI Productivity Insights Platform",
     description:
-      "End-to-end AI-powered enterprise analytics platform on Azure, integrating data ingestion pipelines, AI inference, and real-time dashboards for employee productivity and project performance insights.",
+      "End-to-end AI-powered enterprise analytics on Azure: ingestion, AI inference, and real-time dashboards for employee productivity and project performance.",
     tags: ["Azure", "MLOps", "Generative AI", "FastAPI", "Databricks"],
     highlights: [
-      "Scalable data engineering pipelines using Azure Data Factory and Databricks",
-      "MLOps pipelines with Azure ML for automated model training and deployment",
-      "AI inference microservices for real-time NLP summarization",
+      "Designed and deployed an end-to-end AI-powered enterprise analytics platform on Azure, integrating data ingestion pipelines, AI inference, and real-time dashboards for actionable productivity and project insights.",
+      "Implemented scalable data engineering pipelines using Azure Data Factory and Azure Databricks for structured and unstructured enterprise data (emails, meetings, tasks, project logs).",
+      "Built MLOps pipelines with Azure ML for automated model training, versioning, deployment, and monitoring—including task prioritization and automated report generation.",
+      "Developed AI inference microservices using Azure Functions + FastAPI for real-time predictions and NLP-based summarization of meeting notes, emails, and project reports.",
     ],
   },
   {
-    title: "Conversational E-Commerce Sales Agent",
+    title: "CricAgent AI — Cricket Analytics & NL2SQL Platform",
     description:
-      "AI-powered conversational agent integrated into e-commerce platforms supporting natural language product discovery, compatibility checks, upsell recommendations, and dynamic cart redirection.",
-    tags: ["LangChain", "RAG", "FastAPI", "GCP", "BigQuery"],
-    highlights: [
-      "Natural language product search and discovery",
-      "Real-time compatibility and upsell recommendation engine",
-      "Seamless cart integration with dynamic redirection",
+      "AI-native cricket intelligence stack: FastAPI + Next.js over BigQuery, NL2SQL, multi-turn chat, intent routing, BQ ML hooks, and AI report studio with PDF export.",
+    tags: [
+      "FastAPI",
+      "Next.js",
+      "BigQuery",
+      "Gemini",
+      "NL2SQL",
+      "RAG",
+      "WeasyPrint",
     ],
-  },
-  {
-    title: "Multimodal Field Support Agent",
-    description:
-      "Advanced field support agent leveraging text, voice, and image inputs with Computer Vision and speech recognition for equipment identification and contextual troubleshooting.",
-    tags: ["Computer Vision", "Speech Recognition", "RAG", "Vertex AI"],
     highlights: [
-      "Multi-input support: text, voice, and image processing",
-      "Equipment identification via Computer Vision",
-      "Context-aware troubleshooting with enhanced RAG",
-    ],
-  },
-  {
-    title: "Video Analytics Pipeline for Liquid Crystal Alignment",
-    description:
-      "End-to-end video analytics pipeline using OpenCV, TensorFlow MobileNetV2, PCA, and Hotelling T² control charts for multivariate change-point detection in liquid crystal experiments.",
-    tags: ["OpenCV", "TensorFlow", "PCA", "Streamlit", "Random Forest"],
-    highlights: [
-      "MobileNetV2 CNN for visual feature extraction",
-      "Statistical process control with Hotelling T² charts",
-      "Streamlit inference app for automated reporting",
-    ],
-  },
-  {
-    title: "Sanskrit ASR Pipeline",
-    description:
-      "Automatic Speech Recognition pipeline converting student slokha audio to text using Wav2Vec2 self-supervised pretraining and Transformer-based architectures for low-resource Sanskrit language modeling.",
-    tags: ["Wav2Vec2", "BERT", "Transformers", "NLP", "REST API"],
-    highlights: [
-      "Self-supervised pretraining with fine-tuning for low-resource languages",
-      "BERT-based semantic post-processing for accuracy improvement",
-      "Production REST API with batch processing",
-    ],
-  },
-  {
-    title: "Unified Admin Dashboard & Command Center",
-    description:
-      "Real-time governance dashboard with data source analytics, file-delta integrity monitoring (GCS ↔ BigQuery), pipeline health tracking, KPIs, and audit trails for enterprise AI operations.",
-    tags: ["GCP", "BigQuery", "Cloud Storage", "Pub/Sub", "Streamlit"],
-    highlights: [
-      "Real-time pipeline health monitoring and alerting",
-      "File-delta integrity checks between GCS and BigQuery",
-      "Comprehensive audit trail and governance KPIs",
+      "Built an end-to-end stack querying a multi-format Google BigQuery warehouse (IPL/BBL/MLC ball-by-ball, ODI/T20 career tables, Test matches, partnerships, venues).",
+      "Implemented natural language to SQL: schema-grounded prompts, Gemini-generated BigQuery Standard SQL, async execution with optional dataset location pinning, and structured narrative answers tied to row previews.",
+      "Delivered multi-turn “Data + SQL” chat with transcript-aware SQL generation and answer synthesis; separate pure chat mode over message history.",
+      "Shipped an intent-based query router (stat SQL, comparison, prediction narrative, reports, debate settlement, open chat) plus a lightweight RAG path over curated schema and domain snippets.",
+      "Integrated BigQuery ML (boosted-tree outcomes, K-Means archetyping, ARIMA-style forecasting hooks) with heuristic SQL analytics and Gemini explanations for prediction UX.",
+      "Productized modules as REST APIs and UI flows: dashboards, player profiles, compare (radar + head-to-head), matches/venues, bowling phase views, Test partnerships, debate settler; optional tiers, CORS, API key auth, and rate limiting.",
+      "Implemented AI report studio: Gemini-generated scout reports from live stats; WeasyPrint Markdown → HTML → PDF with shared export patterns across reports, predictions, compare, and query threads.",
     ],
   },
 ];
@@ -268,7 +267,7 @@ export const publications: Publication[] = [
     venue: "ASME MSEC 2024",
     year: 2024,
     description:
-      "Presented novel statistical methods to model thermal distributions and predict material behavior during 3D printing processes.",
+      "Presented novel statistical methods to model thermal distributions and predict material behavior during printing.",
   },
   {
     title:
@@ -276,7 +275,7 @@ export const publications: Publication[] = [
     venue: "Composites Science and Technology",
     year: 2024,
     description:
-      "Research on optimizing polymer composite alignment using ML models and real-time monitoring in advanced manufacturing.",
+      "Research on optimizing polymer composite alignment using ML and in-situ monitoring in advanced manufacturing.",
   },
 ];
 
