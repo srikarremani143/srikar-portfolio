@@ -16,9 +16,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Srikar Anudeep Remani | Generative AI Engineer",
+  title: "Srikar Anudeep Remani | Applied Gen AI Engineer",
   description:
-    "Generative AI Engineer and AI Coding Analyst specializing in LLMs, RAG, multi-agent orchestration, and enterprise-grade AI systems.",
+    "Applied Generative AI engineer specializing in production LLM systems, RAG on BigQuery, multi-agent orchestration, and multimodal interfaces with FastAPI, GCP, and Vertex AI / Gemini.",
   keywords: [
     "Generative AI",
     "AI Engineer",
